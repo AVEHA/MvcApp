@@ -1,0 +1,5 @@
+﻿CREATE TABLE Manufacturer (
+[Id] INT NOT NULL IDENTITY PRIMARY KEY,
+[Name] NVARCHAR(50) NOT NULL,
+[Description] NVARCHAR(50),
+);
