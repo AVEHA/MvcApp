@@ -22,6 +22,7 @@ namespace MvcApp.Models
             return manufacturers;
         }
 
+       
         public Manufacturer Create(Manufacturer manufacturer)
         {
             using (IDbConnection db = new SqlConnection(connectionString))

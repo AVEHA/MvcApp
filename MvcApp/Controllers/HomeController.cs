@@ -34,5 +34,12 @@ namespace MvcApp.Controllers
             
             return View(repo.GetManufacturers());
         }
+
+        public ActionResult Details(int id)
+        {
+            return View();
+        }
+
+
     }
 }
