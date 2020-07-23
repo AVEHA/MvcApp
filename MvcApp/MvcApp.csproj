@@ -117,11 +117,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManufacturersController.cs" />
+    <Compile Include="Core\Dal\Entities\Manufacturer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ManufacturerRepo.cs" />
-    <Compile Include="Models\Manufacturer.cs" />
+    <Compile Include="Core\Dal\Repositories\ManufacturerRepository.cs" />
+    <Compile Include="Models\ManufacturerGridModel.cs" />
+    <Compile Include="Models\ManufacturerDetailModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -3357,7 +3360,11 @@
     <Content Include="Scripts\kendo\2020.2.617\cultures\kendo.culture.aa-ET.min.js.map" />
     <Content Include="Scripts\kendo\2020.2.617\cultures\kendo.culture.aa-ER.min.js.map" />
     <Content Include="Scripts\kendo\2020.2.617\cultures\kendo.culture.aa-DJ.min.js.map" />
-    <Content Include="Views\Home\Manufacturer.cshtml" />
+    <Content Include="Views\Manufacturers\Details.cshtml" />
+    <Content Include="Views\Manufacturers\Index.cshtml" />
+    <Content Include="Views\Manufacturers\Create.cshtml" />
+    <Content Include="Views\Manufacturers\Edit.cshtml" />
+    <Content Include="Views\Manufacturers\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -1,18 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data;
+using System.Data.SqlClient;
 using System.Web;
 using System.Web.Mvc;
 using MvcApp.Models;
+using Dapper;
+using System.Configuration;
 
 namespace MvcApp.Controllers
 {
     public class HomeController : Controller
     {
-        ManufacturerRepo repo = new ManufacturerRepo();
+        
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
         public ActionResult About()
@@ -29,17 +33,9 @@ namespace MvcApp.Controllers
             return View();
         }
 
-        public ActionResult Manufacturer()
-        {
-            
-            return View(repo.GetManufacturers());
-        }
+        
 
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
+       
 
     }
 }

@@ -1,12 +1,18 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: large;
+    color: orange;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    font-size: medium;
+    font-style: italic;
+    color: darkorange;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -14,6 +20,9 @@
 */
 .dl-horizontal dt {
     white-space: normal;
+    background-color: black;
+    border-style: solid;
+    border-width: thin;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -21,4 +30,7 @@ input,
 select,
 textarea {
     max-width: 280px;
+    border-style: solid;
+    color: black;
+
 }

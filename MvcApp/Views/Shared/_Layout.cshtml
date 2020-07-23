@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title – приложение ASP.NET</title>
-    @Styles.Render("~/Content/css")
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet"/>
+    <!--@Styles.Render("~/Content/css")-->
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -24,7 +25,7 @@
                     <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
                     <li>@Html.ActionLink("О программе", "About", "Home")</li>
                     <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Производители", "Manufacturer", "Home")</li>
+                    <li>@Html.ActionLink("Производители", "Index", "Manufacturers")</li>
                 </ul>
             </div>
         </div>
